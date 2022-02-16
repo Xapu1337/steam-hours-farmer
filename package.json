@@ -1,0 +1,47 @@
+{
+  "name": "wumpusbud",
+  "version": "0.5.0",
+  "description": "a bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/core.ts",
+    "start:dev": "ts-node-dev src/core.ts",
+    "start:prod": "node dist/core.js",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyG433/WumpusBud.git"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "wumpus"
+  ],
+  "author": "tonyG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonyG433/WumpusBud/issues"
+  },
+  "homepage": "https://github.com/tonyG433/WumpusBud#readme",
+  "dependencies": {
+    "@discordjs/collection": "^0.5.0",
+    "@types/steam-user": "^4.20.0",
+    "chalk": "^4.1.2",
+    "consola": "^2.15.3",
+    "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
+    "enquirer": "^2.3.6",
+    "klaw": "^4.0.1",
+    "steam-user": "^4.20.2",
+    "table": "^6.7.3"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/node": "^16.11.6",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": " ^4.4.4"
+  }
+}
