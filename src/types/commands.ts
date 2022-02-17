@@ -13,7 +13,7 @@ import {IncomingChatMessage, IncomingFriendMessage} from "./global";
  */
 export interface RunOptions {
     client: SteamClient;
-    message: IncomingChatMessage | IncomingFriendMessage;
+    message: IncomingFriendMessage;
     args: string[];
 }
 

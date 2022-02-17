@@ -9,7 +9,7 @@ dotenv();
  * it's better to write then the mess it usually causes
  */
 try {
-    new SteamClient({}).run();
+    new SteamClient().run();
 } catch (e) {
     consola.error(e);
 }

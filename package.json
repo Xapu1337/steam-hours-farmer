@@ -2,7 +2,8 @@
   "name": "wumpusbud",
   "version": "0.5.0",
   "description": "a bot",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/core.ts",
   "scripts": {
     "start": "ts-node src/core.ts",
     "start:dev": "ts-node-dev src/core.ts",
