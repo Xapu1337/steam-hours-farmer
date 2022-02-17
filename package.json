@@ -9,7 +9,8 @@
     "start:dev": "ts-node-dev src/core.ts",
     "start:prod": "node dist/core.js",
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "pull": "git pull && yarn && echo Done!"
   },
   "repository": {
     "type": "git",
