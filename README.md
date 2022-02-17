@@ -29,6 +29,12 @@ Install Steam Hours Farmer via Yarn
   $ yarn
   $ yarn start:dev
 ```
+
+Update the code easily
+```bash
+  $ yarn pull
+```
+
 ## Feedback
 
 If you have any feedback, please reach out to us at xapu1337@duck.com
