@@ -1,7 +1,7 @@
 {
-  "name": "wumpusbud",
+  "name": "steam-hours-farmer",
   "version": "0.5.0",
-  "description": "a bot",
+  "description": "Utility to farm Steam hours via Node.js",
   "type": "module",
   "main": "src/core.ts",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tonyG433/WumpusBud.git"
+    "url": "git+https://github.com/Xapu1337/steam-idle-farmer.git"
   },
   "keywords": [
     "bot",
@@ -23,9 +23,9 @@
   "author": "tonyG",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tonyG433/WumpusBud/issues"
+    "url": "https://github.com/Xapu1337/steam-idle-farmer/issues"
   },
-  "homepage": "https://github.com/tonyG433/WumpusBud#readme",
+  "homepage": "https://github.com/Xapu1337/steam-idle-farmer#readme",
   "dependencies": {
     "@discordjs/collection": "^0.5.0",
     "@types/steam-user": "^4.20.0",

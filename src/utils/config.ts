@@ -2,7 +2,7 @@
 export default class Config {
     public accountName: string = process.env.ACCOUNT_NAME;
     public accountPassword: string = process.env.ACCOUNT_PASSWORD;
-    public allowedAccounts: any[] = process.env.ALLOWED_ACCOUNTS.split(',').filter(entry => /\S/.test(entry)).map(id => isNaN(Number(id)) ? id : Number(id));
+    public allowedAccounts: any[] = process.env.ALLOWED_ACCOUNTS.split(',');
     public defaultGame: any[] = process.env.DEFAULT_GAMES.split(',').filter(entry => /\S/.test(entry));
     public prefix: string = process.env.PREFIX;
 

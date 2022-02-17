@@ -42,7 +42,7 @@ export default class SteamClient extends SteamUser {
 
             // Import the file
             const cmd: CommandType = await this.utilities.importFile(item.path);
-            console.log(`Loaded ${cmd.name}`);
+
             // if the command is not defined abort
             if (!cmd) return;
 
