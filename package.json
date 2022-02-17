@@ -17,11 +17,11 @@
     "url": "git+https://github.com/Xapu1337/steam-idle-farmer.git"
   },
   "keywords": [
-    "bot",
-    "discord",
-    "wumpus"
+    "steam",
+    "farmer",
+    "automation"
   ],
-  "author": "tonyG",
+  "author": "Xapu1337",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Xapu1337/steam-idle-farmer/issues"
