@@ -1,6 +1,13 @@
 import {Event} from "../types/events"
-export default new Event('loggedOn', (client, details: Record<string, any>, parental: Record<string, any>) => {
-  client.utilities.printLn(`Welcome ${client.configuration.accountName}!`, "STEAM");
-  client.setPersona(1);
+import {EPersonaState} from "steam-user";
+
+export default new Event('loggedOn', (client) => {
+  client.utilities.printLn(`You are logged in as ${client.configuration.accountName}`, "STEAM");
+  client.utilities.printLn(`Your SteamID is ${client.steamID}`, "STEAM");
+  client.utilities.printLn(`Launching default games: ${client.configuration.defaultGame.join(", ")}`, "STEAM");
+
+
+
+  client.setPersona(EPersonaState.Online);
   client.gamesPlayed(client.configuration.defaultGame.map(game => isNaN(Number(game)) ? game : Number(game)));
 });

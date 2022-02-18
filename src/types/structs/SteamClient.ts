@@ -31,6 +31,7 @@ export default class SteamClient extends SteamUser {
 
         this.configuration.verifyAccount();
 
+
         await this.logOn({accountName: this.configuration.accountName, password: this.configuration.accountPassword});
 
         await klaw(path.join(__dirname, "../../commands/messages")).on("data", async (item) => {

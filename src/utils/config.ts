@@ -2,8 +2,8 @@
 export default class Config {
     public accountName: string = process.env.ACCOUNT_NAME;
     public accountPassword: string = process.env.ACCOUNT_PASSWORD;
-    public allowedAccounts: string = process.env.ALLOWED_ACCOUNTS
-    public defaultGame: any[] = process.env.DEFAULT_GAMES.split(',').filter(entry => /\S/.test(entry));
+    public allowedAccounts: any[] = JSON.parse(process.env.ALLOWED_USERS);
+    public defaultGame: any[] = JSON.parse(process.env.DEFAULT_GAMES);
     public prefix: string = process.env.PREFIX;
 
     public verifyAccount(): void {
