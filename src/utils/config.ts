@@ -10,6 +10,14 @@ export default class Config {
         if (!this.accountName || !this.accountPassword) {
             throw new Error('Account name and password are required');
         }
+
+        if (!Array.isArray(this.allowedAccounts) || !this.allowedAccounts.length) {
+            throw new Error('Allowed accounts are required, note that it should be an array like: [id1, id2]');
+        }
+
+        if (!Array.isArray(this.defaultGame) || !this.defaultGame.length) {
+            throw new Error('Default game is required, note that it should be an array like: [gameID, "Custom Game"]');
+        }
     }
 
 }

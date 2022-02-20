@@ -4,9 +4,9 @@ import {CommandType} from "../types/commands";
 export default new ChatEvent("friendMessage", async (client, message) => {
 
     if (!client.configuration.allowedAccounts.includes(message.steamid_friend.getSteamID64())) return;
-    if (!message.message.startsWith(client.configuration.prefix)) return;
+    if (!message.message_no_bbcode.startsWith(client.configuration.prefix)) return;
 
-    const args = message.message.slice(client.configuration.prefix.length).trim().split(/ +/g);
+    const args = message.message_no_bbcode.slice(client.configuration.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     if (!client.commands.has(command)) return;
 

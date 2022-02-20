@@ -35,6 +35,14 @@ Update the code easily
   $ yarn pull
 ```
 
+## Commands and Usage
+```
+- currentgame - Shows the current game that is being played [usuage: !currentgame]
+  
+- setcurrentgame - Sets the current game that is being played [usuage: !setcurrentgames <ArrayType>]
+  (ArrayType: ["CS:GO", 730]
+```
+
 ## Feedback
 
 If you have any feedback, please reach out to us at xapu1337@duck.com
