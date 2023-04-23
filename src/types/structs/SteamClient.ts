@@ -2,7 +2,7 @@
 import SteamUser from "steam-user";
 import Utility from "../../utils/utility";
 import Config from "../../utils/config";
-import Collection from "@discordjs/collection";
+import { Collection } from "@discordjs/collection";
 import {CommandType} from "../commands";
 import {ChatEvent, Event} from "../events";
 import * as path from "path";

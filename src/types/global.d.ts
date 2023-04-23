@@ -27,7 +27,7 @@ interface Events {
     receivedFromGC: [appid: number, msgType: number, payload: Buffer];
     loggedOn: [details: Record<string, any>, parental: Record<string, any>];
     steamGuard: [domain: string | null, callback: (code: string) => void, lastCodeWrong: boolean];
-    error: [err: Error];
+    error: [err: Error & { eresult: SteamUser.EResult }];
     disconnected: [eresult: SteamUser.EResult, msg?: string];
     sentry: [sentry: Buffer];
     webSession: [sessionID: string, cookies: string[]];
@@ -45,7 +45,7 @@ interface Events {
     wallet: [hasWallet: boolean, currency: SteamUser.ECurrencyCode, balance: number];
     licenses: [licenses: Array<Record<string, any>>];
     gifts: [gifts: Gift[]];
-    appOwnershipCached: [];
+    ownershipCached: [];
     changelist: [changenumber: number, apps: number[], packages: number[]];
     appUpdate: [appid: number, data: ProductInfo];
     packageUpdate: [appid: number, data: ProductInfo];
